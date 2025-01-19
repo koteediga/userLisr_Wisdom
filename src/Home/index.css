@@ -146,16 +146,21 @@ body {
 
 .home {
   max-width: 800px;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Slight transparency for better integration with the background */
+  border-radius: 12px; /* Rounded corners for a modern look */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
 }
 
 h1 {
   text-align: center;
-  color: #4A90E2;
+  color: #4a90e2;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -170,7 +175,7 @@ h1 {
 .search-input {
   width: 70%;
   padding: 10px;
-  border: 2px solid #4A90E2;
+  border: 2px solid #4a90e2;
   border-radius: 4px;
   font-size: 16px;
   transition: border-color 0.3s;
@@ -183,7 +188,7 @@ h1 {
 
 .sort-select {
   padding: 10px;
-  border: 2px solid #4A90E2;
+  border: 2px solid #4a90e2;
   border-radius: 4px;
   font-size: 16px;
   transition: border-color 0.3s;
@@ -195,8 +200,10 @@ h1 {
 }
 
 .user-list {
-  list-style-type: none;
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto; /* Allows vertical scrolling */
   padding: 0;
+  list-style-type: none;
 }
 
 .user-item {
@@ -227,11 +234,15 @@ h1 {
 .loading {
   text-align: center;
   font-size: 18px;
-  color: #4A90E2;
+  color: #4a90e2;
 }
 
 .error {
   text-align: center;
   font-size: 18px;
   color: red;
+}
+
+.user-item h2 {
+  color: #0d47a1; /* Dark blue */
 }
